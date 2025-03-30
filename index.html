@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Features">Features</a></li>
+        <li><a href="#Summary">Summary</a></li>
+        
+      </ul>
+    </nav>
+    <h1>Budget Tracker</h1>
+    <h2>Track your wallet today, live without regrets tomorrow!</h2>
+  </header>
 
+  <main id="app">
+    
+    <section class="summary">
+      <h2 id="balance">Balance: KSh 0</h2>
+      <p>Income: <span id="income">KSh 0</span></p>
+      <p>Expenses: <span id="expenses">KSh 0</span></p>
+    </section>
+
+    <section id="add-transaction">
+      
+      <h3>Add a New Transaction</h3>
+      
+      <form id="transaction-form">
+        <input type="text" id="description" placeholder="Description" required />
+        <style>
+        input[type="text"] {
+          width: 100%;
+          padding: 10px;
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        </style>
+        <input type="number" id="amount" placeholder="Amount" required />
+      <style>
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+   
+      </style>
+        <select id="type">
+          <option value="income">Income</option>
+          <style>
+          select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
+          </style>
+          <option value="expense">Expense</option>
+        </select>
+        <button type="submit">Add Transaction</button>
+      </form>
+    </section>
+
+    <section class="search-transactions">
+      <h3>Search Transactions</h3>
+      <input type="text" id="search" placeholder="Search transactions..." />
+    </section>
+
+    <section class="transactions">
+      <h3>Transaction History</h3>
+      <ul id="transactions-list"></ul>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h3>About Budget Tracker</h3>
+      <h3>
+        Budget Tracker is your ultimate tool for financial management.  
+        <br>Whether you're keeping tabs on expenses or tracking your savings <br> goals, we've got you covered!
+        Our goal is to empower individuals to make <br> smart financial decisions and achieve their aspirations.
+      </h3>
+      <h3>
+        With real-time updates and an easy-to-use interface,<br> Budget Tracker ensures your money works as hard as you do.
+        <br>Start tracking your finances today and take charge of your future!
+      </h3>
+    </section>
+
+   
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Budget Tracker App. All rights reserved.</p>
+    <button id="toggle-mode">Toggle Dark Mode</button>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
