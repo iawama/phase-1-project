@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c2cef5;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(211, 20, 20);
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.navbar li{
+    list-style: none;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+#map-container {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+#info-panel {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#state-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#destination-info {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+#destination-image, .flag-image {
+    max-width: 75%;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* //Responsive Design  */
+@media (max-width: 768px) {
+    #map-container {
+        height: 300px;
+    }
+
+    #info-panel {
+        padding: 0.5rem;
+    }
+
+    #state-name {
+        font-size: 1.25rem;
+    }
+
+    #destination-info {
+        font-size: 0.9rem;
+    }
+
+    
+}
