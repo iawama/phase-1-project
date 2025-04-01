@@ -25,9 +25,9 @@ const updateSummary = () => {
 
   const balance = income - expenses;
 
-  document.getElementById('income').textContent = `KSh ${income.toFixed(2)}`;
-  document.getElementById('expenses').textContent = `KSh ${expenses.toFixed(2)}`;
-  document.getElementById('balance').textContent = `Balance: KSh ${balance.toFixed(2)}`;
+  document.getElementById('income').textContent = `USD ${income.toFixed(2)}`;
+  document.getElementById('expenses').textContent = `USD ${expenses.toFixed(2)}`;
+  document.getElementById('balance').textContent = `Balance: USD ${balance.toFixed(2)}`;
 };
 
 const renderTransactions = (filteredTransactions = transactions) => {
@@ -35,7 +35,7 @@ const renderTransactions = (filteredTransactions = transactions) => {
   transactionsList.innerHTML = filteredTransactions
     .map(t => `
       <li class="${t.type}">
-        ${t.description} - KSh ${t.amount.toFixed(2)}
+        ${t.description} - USD ${t.amount.toFixed(2)}
         <button onclick="deleteTransaction(${t.id})">Delete</button>
       </li>
     `)
