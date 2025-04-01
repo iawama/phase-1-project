@@ -7,7 +7,7 @@ const fetchTransactions = () => {
     .then(response => response.json())
     .then(data => {
       transactions = data; // Assign fetched data to the transactions array
-      updateSummary(); // Update the financial summary
+      updateSummary(); // Update the expense summary
       renderTransactions(); // Render all fetched transactions
     })
     .catch(error => console.error('Error fetching transactions:', error));
